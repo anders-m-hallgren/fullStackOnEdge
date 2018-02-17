@@ -1,0 +1,16 @@
+<ngx-datatable
+  class="material"
+  [loadingIndicator]="loadingIndicator"
+  [columnMode]="'force'"
+  [headerHeight]="50"
+  [footerHeight]="50"
+  [rowHeight]="'auto'"
+  [reorderable]="reorderable"
+  [rowClass]="getRowClass"
+    [rows]="rows"
+    [columns]="columns">
+    <ngx-datatable-column name="Name"></ngx-datatable-column>
+      <ngx-datatable-column name="Gender" headerClass="is-gender" [cellClass]="getCellClass"></ngx-datatable-column>
+      <ngx-datatable-column name="Company"></ngx-datatable-column>
+      <ngx-datatable-column name="Age" headerClass="is-age" [cellClass]="getCellClass"></ngx-datatable-column>
+</ngx-datatable>
